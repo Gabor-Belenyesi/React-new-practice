@@ -1,3 +1,6 @@
 .Pizza.fav {
     border: solid 5px green;
 }
+.pizzaPhoto {
+    width: 200px;
+}
