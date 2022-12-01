@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Data/Pizza.css"
 
 function Pizza({ name, id, picture, ingredients, price }) {
@@ -7,6 +7,9 @@ function Pizza({ name, id, picture, ingredients, price }) {
     const {name} = pizzaData */
 
     const [isFavorite, setIsFavorite] = useState(false)
+    useEffect(function () {
+        console.log(isFavorite)
+    }, [isFavorite])
 
     return (
         <div className={"Pizza" + (isFavorite ? " fav" : "")}>
